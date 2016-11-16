@@ -21,6 +21,17 @@ usage: download_images.py [-h] [-o OUTPUT_DIRECTORY] file_name
   	* Shows this help message and exit
   * -o OUTPUT_DIRECTORY, --output_directory OUTPUT_DIRECTORY
 	* The directory in which to save the downloaded images
+	
+---
+### This script supports:
+* Checking for different line arguments as mentioned in Usage
+* Checking the existance of OUTPUT_DIRECTORY if supplied
+* Checking for any whitespace character (equal to [\r\n\t\f\v ]) in a URL
+* Getting the correct image name even if the URL ends with a slash
+* Warning the user if the image already exists
+* Choosing a different download directory for saving images
+* Calculation of how many successes, failures and attempts to download files that are not images
+* Calculation of the total time
 
 ### This script can be further improved to include checking for:
 * repeated URLs
