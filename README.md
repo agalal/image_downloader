@@ -7,20 +7,26 @@ This is a script that takes a plaintext file as an argument containing URLs, one
 
 and downloads all images, storing them on the local hard disk.
 
+## Examples:
+	download_images.py -h
+	download_images.py --help
+	download_images.py urls.txt
+	download_images.py urls.txt -o..
+
 ## USAGE:
 
 download_images.py -h
 usage: download_images.py [-h] [-o OUTPUT_DIRECTORY] file_name
 
 ### positional arguments:
-  * file_name
-  	* The name of the file containing URLs
+  	file_name
+  		The name of the file containing URLs
 
 ### optional arguments:
-  * -h, --help
-  	* Shows this help message and exit
-  * -o OUTPUT_DIRECTORY, --output_directory OUTPUT_DIRECTORY
-	* The directory in which to save the downloaded images
+	-h, --help
+  		Shows this help message and exit
+	-o OUTPUT_DIRECTORY, --output_directory OUTPUT_DIRECTORY
+		The directory in which to save the downloaded images
 	
 ---
 ### This script supports:
